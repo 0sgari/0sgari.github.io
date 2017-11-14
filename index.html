@@ -1,34 +1,89 @@
 <html>
 <head>
-<title>https://Download.save.dat/stealer/for/free</title>
 <meta charset="utf-8">
-<script
-			  src="https://code.jquery.com/jquery-3.2.1.js"
-			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-			  crossorigin="anonymous">
-			  </script>
-
+<style>
+body {
+background-image: url("http://31.media.tumblr.com/c4b317645bb2158397c254f81617d289/tumblr_inline_nmk0w7ze831t08b5v_500.gif");
+background-size: 2400px 2200px;
+}
+#main {
+text-align:center;
+background-color:white;
+}
+#main {
+border:solid 2px coral;
+background-color:white;
+}
+#button {
+ width:50%;
+ height:15%;
+ background-color:coral;
+ clear: left;
+  margin-right: 10px;
+  padding: 5px;
+  border-width: 3px;
+  border-color: black;
+  border-style: dashed;
+}
+input {
+padding:5px;
+}
+</style>
+<title>Oskulix tykkää kalasta</title>
 </head>
 <body>
-<h1>Ilmaista rahaa! Ota palomuurisi pois!!</h1>
-<p>Onneksi olkoon!! olet miljoonas kävijä!!!</p>
-<button id="nappi">
-Olet voittanut 1,000,000e!! Saat rahat painamalla tästä!</button>
-<p id="tekstiKohta"></p>
-<img src="" id="kuva">
+<div id="main"style="width:600px; margin:0 auto;">
+		<h2>Kirjoita</h2>
+		<h3>Nimesi</h3>
+		<input type="text" name="search" placeholder="Kirjoita nimesi"> 
+		<h3>Syntymäkuukautesi</h3>
+    <select id='gMonth2' onchange="show_month()">
+    <option value=''>--Valitse kuukausi--</option>
+    <option selected value='1'>Tammikuu</option>
+    <option value='2'>Helmikuu</option>
+    <option value='3'>Maaliskuu</option>
+    <option value='4'>Huhtikuu</option>
+    <option value='5'>Toukokuu</option>
+    <option value='6'>Kesäkuu</option>
+    <option value='7'>Heinäkuu</option>
+    <option value='8'>Elokuu</option>
+    <option value='9'>Syyskuu</option>
+    <option value='10'>Lokakakuu</option>
+    <option value='11'>Marraskuu</option>
+    <option value='12'>Joulukuu</option>
+    </select>
+<h3>Sukupuoli</h3>
+<form action="/action_page.php">
+  <input class="spuoli" type="radio" name="gender" value="Mies">Mies<br>
+  <input class="spuoli" type="radio" name="gender" value="Nainen" checked>Nainen<br>
+  <input class="spuoli" type="radio" name="gender" value="Joku muu" checked>Joku muu<br>
+</form> 	
+<h3>Lempivärisi</h3>
+    <select id='gMonth2' onchange="show color()">
+    <option value=''>--Valitse kuukausi--</option>
+    <option selected value='1'>Punainen</option>
+	 <option value='2'>Keltainen</option>
+    <option value='3'>Musta</option>
+    <option value='4'>Valkoinen</option>
+    <option value='5'>Sininen</option>
+    <option value='6'>Vihreä</option>
+    <option value='7'>Oranssi</option>
+    <option value='8'>Pinkki</option>
+    <option value='9'>Violetti</option>
+    <option value='10'>Harmaa</option>
+    <option value='11'>Turkoosi</option>
+    <option value='12'>Tummanpunainen</option>
+	</select>
+<h3>Lempikarkkisi</h3>
+<form action="/action_page.php">
+  <input type="checkbox" name="Karkki" value="Lakupiippu">Lakupiippu
+  <input type="checkbox" name="Karkki" value="Vaahtokarkki" checked>Vaahtokarkki
+  <input type="checkbox" name="Karkki" value="Suklaa" checked>Suklaa
+  <input type="checkbox" name="Karkki" value="Tikkari" checked>Tikkari
+</form> 
+<button id="button">
+<h3>Paina tästä nähdäksesi tulevaisuutesi!</h3>
+</button>
+    </div>
 </body>
-<script>
-$("#nappi").click(function() {
-alert("Viruksen lataus on valmis, Kiitos kun olit kärsivällinen!");
-});
-/*
-//tallennetaan nappi elementti muuttujaan nappiMuut
-var nappiMuut = document.getElementById("nappi");
-//liitetään nappiin eventti
-nappiMuut.addEventListener("click",function() {
-//alert("Viruksen lataus aloitetaan...");
-document.getElementById("kuva").src = "ez.jpg";
-} );
-*/
-</script>
 </html>
